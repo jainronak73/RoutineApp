@@ -1,0 +1,7 @@
+LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
+                new DataPoint(0, percent),
+                new DataPoint(1, 0.2),
+                new DataPoint(2, 0.3),
+                new DataPoint(3, 0.7),
+                new DataPoint(4, 0.75)
+        });

@@ -15,6 +15,9 @@ import java.io.InputStreamReader;
 
 public class timeTable extends AppCompatActivity {
 
+    int i =0;
+    LineGraphSeries<DataPoint> series = new LineGraphSeries<>();
+    int size = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,15 +25,14 @@ public class timeTable extends AppCompatActivity {
 
         GraphView graph = (GraphView) findViewById(R.id.graphs1);
         int percent = 0;
-        int i =0;
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<>();
-        int size = 100;
+       // int i =0;
         int x =0 ,y = 0;
-        for(i = 0; i < size; i++) {
+        for(i = 0; i < 10; i++) {
             x = x + 1;
             y = y + 2;
             series.appendData(new DataPoint(x,y),true,size);
         }
+
         graph.addSeries(series);
         Context context = this;
         try {
@@ -40,7 +42,12 @@ public class timeTable extends AppCompatActivity {
         }
     }
     public void graph(){
-        int i = 0;
+        GraphView graph = (GraphView) findViewById(R.id.graphs1);
+        i = i+1;
+        int x = i;
+        int y = 2*i;
+        series.appendData(new DataPoint(x,y),true,size);
+        graph.addSeries(series);
 
     }
     public void readFromAssets(Context context, String filename) throws IOException {

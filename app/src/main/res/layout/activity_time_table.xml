@@ -53,8 +53,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text=" "
-                    android:background="#FFFFFF"
+                    android:background="@drawable/border"
                     android:textAlignment="center"
+
                     />
 
                 <TextView
@@ -65,6 +66,7 @@
                     android:text="8-9"
                     android:textStyle="bold"
                     android:textAlignment="center"
+                    android:background="@drawable/border"
                     />
 
                 <TextView
@@ -74,7 +76,7 @@
                     android:layout_weight="1"
                     android:text="9-10"
                     android:textStyle="bold"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/border"
                     android:textAlignment="center"/>
 
                 <TextView
@@ -84,7 +86,8 @@
                     android:layout_weight="1"
                     android:text="10-11"
                     android:textStyle="bold"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text04"
@@ -93,7 +96,7 @@
                     android:layout_weight="1"
                     android:text="11-12"
                     android:textStyle="bold"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/border"
                     android:textAlignment="center"/>
 
                 <TextView
@@ -102,7 +105,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:text="  "
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text06"
@@ -111,7 +115,7 @@
                     android:layout_weight="1"
                     android:text="1-2"
                     android:textStyle="bold"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/border"
                     android:textAlignment="center"/>
 
                 <TextView
@@ -121,7 +125,8 @@
                     android:layout_weight="1"
                     android:text="2-3"
                     android:textStyle="bold"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text08"
@@ -130,7 +135,7 @@
                     android:layout_weight="1"
                     android:text="3-4"
                     android:textStyle="bold"
-                    android:background="#FFFFFF"
+                    android:background="@drawable/border"
                     android:textAlignment="center"/>
             </TableRow>
 
@@ -145,7 +150,8 @@
                     android:layout_weight="1"
                     android:text="Mon"
                     android:textStyle="bold"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text11"
@@ -153,14 +159,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text13"
@@ -168,14 +175,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white" />
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text15"
@@ -184,14 +192,15 @@
                     android:layout_weight="0.3"
                     android:text=" "
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text17"
@@ -199,14 +208,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border" />
             </TableRow>
 
             <TableRow
@@ -221,14 +231,15 @@
                     android:text="Tue"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text22"
@@ -236,14 +247,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text24"
@@ -251,14 +263,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
-                    android:text=" " />
+                    android:text=" "
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text26"
@@ -266,14 +279,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white" />
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text28"
@@ -281,7 +295,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
             </TableRow>
 
             <TableRow
@@ -295,7 +309,8 @@
                     android:layout_weight="1"
                     android:text="Wed"
                     android:textStyle="bold"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text31"
@@ -303,14 +318,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text33"
@@ -318,14 +334,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white"/>
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
 
                 <TextView
                     android:id="@+id/text35"
@@ -333,14 +350,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:text=" "
-                    android:background="@android:color/white" />
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text36"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text37"
@@ -348,14 +366,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
-                    android:background="@android:color/white" />
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:id="@+id/text38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:background="@drawable/border"/>
             </TableRow>
         </TableLayout>
         <View
@@ -412,6 +431,7 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="graph"
             android:text="Button" />
 
     </LinearLayout>

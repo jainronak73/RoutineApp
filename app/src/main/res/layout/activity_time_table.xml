@@ -389,50 +389,122 @@
             android:layout_height="wrap_content"
             android:text="Attendance Log :"
             android:textColor="@android:color/black"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
-        <TextView
-            android:id="@+id/texts1"
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="wrap_content">
 
-        <com.jjoe64.graphview.GraphView
-            android:id="@+id/graphs1"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-            />
-        <TextView
-            android:id="@+id/texts2"
+                <TextView
+                    android:id="@+id/texts1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_weight="3"/>
+
+                <Button
+                    android:id="@+id/bs1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="buttons1"
+                    android:text="Show stats" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/texts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_weight="3" />
+
+                <Button
+                    android:id="@+id/bs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="graph"
+                    android:text="Show stats"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="311dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/texts3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_weight="3" />
+
+                <Button
+                    android:id="@+id/bs3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="graph"
+                    android:text="Show stats"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="311dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/texts4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_weight="3" />
+
+                <Button
+                    android:id="@+id/bs4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="graph"
+                    android:text="Show stats"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="311dp" />
+
+            </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="match_parent" >
 
-        <TextView
-            android:id="@+id/texts3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            <TextView
+                android:id="@+id/texts5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="3" />
 
-        <TextView
-            android:id="@+id/texts4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/texts5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="graph"
-            android:text="Button" />
+            <Button
+                android:id="@+id/bs5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="graph"
+                android:text="Show stats"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="311dp" />
+        </TableRow>
+        </TableLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

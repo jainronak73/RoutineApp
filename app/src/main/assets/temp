@@ -5,3 +5,128 @@ LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
                 new DataPoint(3, 0.7),
                 new DataPoint(4, 0.75)
         });
+
+
+        /* public static void readFromAssets(Context context, String filename,String date, String month, String desc, String options) throws IOException {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(context.getAssets().open(filename)));
+
+                StringBuilder sb = new StringBuilder();
+                String mLine = reader.readLine();
+                while (mLine != null) {
+                    sb.append("\n" + mLine);
+                    mLine = reader.readLine();
+                }
+                reader.close();
+            }
+            public void submit(View view){
+
+                EditText dat = (EditText)findViewById(R.id.editDate);
+                String date = dat.toString();
+                EditText mon = (EditText)findViewById(R.id.editMonth);
+                String month = mon.toString();
+                EditText des = (EditText) findViewById(R.id.editEvent);
+                String desc = des.toString();
+                Spinner spin = (Spinner)findViewById(R.id.spinner3);
+                String action = spin.getSelectedItem().toString();
+                Context context = this;
+                try {
+                    readFromAssets(context,"dates.txt",date,month,desc,action);
+                }catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }*/
+
+
+
+
+
+
+
+
+
+
+
+
+            <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/editDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="Enter date"
+                                    android:inputType="textPersonName" />
+
+                                <EditText
+                                    android:id="@+id/editMonth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="Enter Month"
+                                    android:inputType="textPersonName" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/editEvent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="Give Description"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Spinner
+                                    android:id="@+id/spinner3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/updatebtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Update" />
+
+                            </TableRow>
+                        </TableLayout>
+
+
+FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("attendance");
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String change = dataSnapshot.getValue().toString();
+                Map<String,String> map = dataSnapshot.getValue(Map.class);
+                String at1 = map.get("s1");
+                cs1 = ((int) at1.length());
+                for(i=0;i<cs1;i++){
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+        String str = myRef.getKey().toString();
+        myRef.child("mess").setValue("Hey");

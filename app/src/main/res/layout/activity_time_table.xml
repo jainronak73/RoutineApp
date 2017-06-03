@@ -431,7 +431,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="graph"
+                    android:onClick="buttons1"
                     android:text="Show stats"
                     tools:layout_editor_absoluteX="42dp"
                     tools:layout_editor_absoluteY="311dp" />
@@ -453,7 +453,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="graph"
+                    android:onClick="buttons1"
                     android:text="Show stats"
                     tools:layout_editor_absoluteX="42dp"
                     tools:layout_editor_absoluteY="311dp" />
@@ -475,7 +475,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="graph"
+                    android:onClick="buttons1"
                     android:text="Show stats"
                     tools:layout_editor_absoluteX="42dp"
                     tools:layout_editor_absoluteY="311dp" />
@@ -498,7 +498,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="graph"
+                    android:onClick="buttons1"
                     android:text="Show stats"
                     tools:layout_editor_absoluteX="42dp"
                     tools:layout_editor_absoluteY="311dp" />

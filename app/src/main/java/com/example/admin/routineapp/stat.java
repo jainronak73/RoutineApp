@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -23,6 +25,8 @@ public class stat extends AppCompatActivity {
     double count;
     int[] attendance = new int[20];
     double attended;
+    String subject;
+    DatabaseReference myRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,7 @@ public class stat extends AppCompatActivity {
         Intent in = getIntent();
         Bundle extra = in.getExtras();
         count = extra.getInt("count");
+        subject = extra.getString("subject");
         attended = extra.getInt("attended");
         percentage = (attended/count)*100;
         percentage = Math.round((percentage)*100.0)/100.0;
@@ -89,7 +94,7 @@ public class stat extends AppCompatActivity {
         String s = sp.getSelectedItem().toString();
         Intent in = new Intent(this,timeTable.class);
         int cn = Integer.parseInt(str);
-        if(cn > (int)count){
+        if(cn > (int)count + 1){
             alertDialog.setTitle("Sorry");
             alertDialog.setMessage("Those many classes have not been held yet!");
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
@@ -103,6 +108,12 @@ public class stat extends AppCompatActivity {
 
         }
         else{
+            int i = 0;
+            String fin = "";
+            String temp;
+            int tem = 0;
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            myRef = database.getReference("attendance").child(subject);
             alertDialog.setTitle("Success!");
             alertDialog.setMessage("Your attendance has been upated!");
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
@@ -114,20 +125,20 @@ public class stat extends AppCompatActivity {
             alertDialog.show();
             et.setBackgroundColor(Color.rgb(3,253,117));
             if(s.compareTo("True") == 0){
-                if(attendance[cn - 1] == 0)
-                    attended = attended + 1;
                 attendance[cn - 1] = 1;
             }
             else {
-                if (attendance[cn - 1] == 1)
-                    attended = attended - 1;
-
                 attendance[cn - 1] = 0;
             }
-            int an = (int)attended;
-            in.putExtra("attendance",attendance);
-            in.putExtra("attended",an);
-            setResult(1,in);
+            if (cn == count + 1)
+                count = count+1;
+            for(i=0;i<count;i++){
+               // tem = tem*10 + attendance[i];
+                fin = fin.concat(Integer.toString(attendance[i]));
+            }
+            //fin = Integer.toString(tem);
+            myRef.setValue(fin);
+
         }
 
     }

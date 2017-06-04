@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">RoutineApp</string>
+    <string name="loading">Signing you in …</string>
+    <string-array name="drawer_menu_items">
+        <item>Important Today</item>
+        <item>Today\'s Schedule</item>
+        <item>Up This Month</item>
+        <item>Settings</item>
+        <item>About Us</item>
+        <item>Help &amp; Feedback</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
     <string-array name="year">
         <item>2017</item>
         <item>2016</item>
@@ -12,8 +23,4 @@
         <item>Present</item>
         <item>Absent</item>
     </string-array>
-<string-array name="update">
-    <item>Insert</item>
-    <item>Delete</item>
-</string-array>
 </resources>

@@ -1,12 +1,11 @@
-package com.example.admin.routineapp;
+package com.iiest.routineapp;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.annotation.IntegerRes;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -16,6 +15,7 @@ import android.widget.TextView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.iiest.routineapp.fragments.TimeTable;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -56,7 +56,7 @@ public class stat extends AppCompatActivity {
         series.appendData(new DataPoint(x,y),true,size);
         for(i = 1; i < count; i++) {
             x = i;
-            y = ((double)(attendance[i] + (i)*y))/(i+1);
+            y = (attendance[i] + (i) * y) / (i + 1);
             y = Math.round(y*10.0)/10.0;
             series.appendData(new DataPoint(x,y),true,size);
         }
@@ -92,7 +92,7 @@ public class stat extends AppCompatActivity {
         String str = et.getText().toString();
         Spinner sp = (Spinner)findViewById(R.id.spinner2);
         String s = sp.getSelectedItem().toString();
-        Intent in = new Intent(this,timeTable.class);
+        Intent in = new Intent(this, TimeTable.class);
         int cn = Integer.parseInt(str);
         if(cn > (int)count + 1){
             alertDialog.setTitle("Sorry");

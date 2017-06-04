@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "400814734505",
+    "firebase_url": "https://routine-11f73.firebaseio.com",
+    "project_id": "routine-11f73",
+    "storage_bucket": "routine-11f73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400814734505:android:b74fe1e4cb6c3461",
+        "android_client_info": {
+          "package_name": "com.example.admin.routineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400814734505-4dblup5es2njd3p76lvbb1hjseggd373.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTNkdcWXXjBCxhsfi8RLEJJilJRIxFZn4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

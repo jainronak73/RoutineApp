@@ -1,6 +1,6 @@
-<h2> Year 2017 :</h2><hr>
-<h3><u>Mid Term</u></h3>
-<b><font color="black">Algorithm</font></b><br>
-Link : https:/drive.google.com/algorithmMidtermPaper<br><br>
-<b><font color="black">Compiler</font></b><br>
-Link : https:/drive.google.com/compilerMidtermPaper
+<h2> <u>Year 2017</u> :</h2><hr>
+<b><font color="black"><h3>Algorithm</h3></font></b>
+Link : <a href = "https:/drive.google.com/algorithmMidtermPaper">Algorithm Midterm Paper</a><br>
+Link : <a href = "https:/drive.google.com/algorithmFinalPaper">Algorithm FinalSem Paper</a><br><br>
+<b><font color="black"><h3>Compiler</h3></font></b>
+Link : <a href="https:/drive.google.com/compilerMidtermPaper">Compiler Midterm Paper </a><br>

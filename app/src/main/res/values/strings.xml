@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">RoutineApp</string>
+    <string-array name="year">
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+    </string-array>
+    <string-array name="bool">
+        <item>Present</item>
+        <item>Absent</item>
+    </string-array>
+<string-array name="update">
+    <item>Insert</item>
+    <item>Delete</item>
+</string-array>
 </resources>

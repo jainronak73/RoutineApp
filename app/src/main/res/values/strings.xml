@@ -9,8 +9,8 @@
         <item>2012</item>
     </string-array>
     <string-array name="bool">
-        <item>True</item>
-        <item>False</item>
+        <item>Present</item>
+        <item>Absent</item>
     </string-array>
 <string-array name="update">
     <item>Insert</item>

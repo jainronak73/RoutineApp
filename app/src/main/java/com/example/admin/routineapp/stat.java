@@ -124,7 +124,7 @@ public class stat extends AppCompatActivity {
                     });
             alertDialog.show();
             et.setBackgroundColor(Color.rgb(3,253,117));
-            if(s.compareTo("True") == 0){
+            if(s.compareTo("Present") == 0){
                 attendance[cn - 1] = 1;
             }
             else {

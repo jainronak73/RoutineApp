@@ -22,6 +22,7 @@ import org.w3c.dom.Text;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -33,6 +34,7 @@ public class timeTable extends AppCompatActivity {
     String at1,at2,at3,at4,at5;
     int j;
     int size;
+    Map<String,Integer> val = new HashMap<String,Integer>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +53,7 @@ public class timeTable extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int j = 0;
+                a1 = 0;
                 at1 = dataSnapshot.getValue().toString();
                 cs1 = at1.length();
                 for(j=0;j<cs1;j++){
@@ -58,6 +61,8 @@ public class timeTable extends AppCompatActivity {
                     if(as1[j] == 1)
                         a1++;
                 }
+               val.put("a1",a1);
+                val.put("cs1",cs1);
             }
 
             @Override
@@ -70,6 +75,7 @@ public class timeTable extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 j = 0;
+                a2 = 0;
                 at2 = dataSnapshot.getValue().toString();
                 cs2 = at2.length();
                 for(j=0;j<cs2;j++){
@@ -77,6 +83,8 @@ public class timeTable extends AppCompatActivity {
                     if(as2[j] == 1)
                         a2++;
                 }
+                val.put("a2",a2);
+                val.put("cs2",cs2);
                 }
 
             @Override
@@ -89,6 +97,7 @@ public class timeTable extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 j = 0;
+                a3 = 0;
                 at3 = dataSnapshot.getValue().toString();
                 cs3 = at3.length();
                 for(j=0;j<cs3;j++){
@@ -96,6 +105,8 @@ public class timeTable extends AppCompatActivity {
                     if(as3[j] == 1)
                         a3++;
                 }
+                val.put("a3",a3);
+                val.put("cs3",cs3);
             }
 
             @Override
@@ -108,6 +119,7 @@ public class timeTable extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 j = 0;
+                a4 = 0;
                 at4 = dataSnapshot.getValue().toString();
                 cs4 = at4.length();
                 for(j=0;j<cs4;j++){
@@ -115,6 +127,8 @@ public class timeTable extends AppCompatActivity {
                     if(as4[j] == 1)
                         a4++;
                 }
+                val.put("a4",a4);
+                val.put("cs4",cs4);
             }
 
             @Override
@@ -127,6 +141,7 @@ public class timeTable extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 j = 0;
+                a5 = 0;
                 at5 = dataSnapshot.getValue().toString();
                 cs5 = at5.length();
                 for(j=0;j<cs5;j++){
@@ -134,6 +149,8 @@ public class timeTable extends AppCompatActivity {
                     if(as5[j] == 1)
                         a5++;
                 }
+                val.put("a5",a5);
+                val.put("cs5",cs5);
             }
 
             @Override
@@ -154,6 +171,16 @@ public class timeTable extends AppCompatActivity {
         size = 100;
         int percent = 0;
        // int i =0;
+        /*val.put("a1",a1);
+        val.put("a2",a2);
+        val.put("a3",a3);
+        val.put("a4",a4);
+        val.put("a5",a5);
+        val.put("cs1",cs1);
+        val.put("cs2",cs2);
+        val.put("cs3",cs3);
+        val.put("cs4",cs4);
+        val.put("cs5",cs5);*/
         Context context = this;
         try {
                 readFromAssets(context,"tt.txt");
@@ -175,7 +202,7 @@ public class timeTable extends AppCompatActivity {
             if(mLine.substring(0,1).equals("s")){
                 r = "a" +mLine.substring(1,2);
                 ta = "cs" + mLine.substring(1,2);
-                s = "S" + mLine. substring(1,2) + " : " + mLine.substring(3) + "<br>Attendance : " + r + " / " + ta;
+                s = "S" + mLine. substring(1,2) + " : " + mLine.substring(3) + "<br>Attendance : " + val.get(r) + " / " + val.get(ta);
             }else {
                 s = mLine.substring(3, 5);
             }
